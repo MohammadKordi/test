@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="profile">
+            <div class="profile-icon">
+                <img src="https://via.placeholder.com/50" alt="Profile Picture">
+            </div>
+            <h3>Yosr Dirani</h3>
+            <p>yosr@gmail.com</p>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Events</li>
+            <li>About</li>
+            <li>Add new admin</li>
+            <li>Change Password</li>
+        </ul>
+        <button>Log out</button>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search...">
+            <button>Add Event</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event ID</th>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Matt Dickerson</td>
+                    <td>13/05/2022</td>
+                    <td>Amman</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wiktoria</td>
+                    <td>22/05/2022</td>
+                    <td>Amman</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
